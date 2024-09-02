@@ -1,0 +1,12 @@
+Sub (subscribe a topic), Pub (publish a topic), ReqList (request a topic), RepList (reply and list topic), CancelSub (cancel a subscriptions topic), Ack (serializacao):
+
+repr() - retorna a msg em formato JSON:
+
+toXML() - retorna a msg em formato XML:
+
+toPickle() - retorna a msg em formato Pickle:
+
+
+sendMsg() - recebe o socket e mensagem e envia verificando o tipo de serializador e codifica a mensagem de acordo com esse tipo.
+
+recvMsg() - recebe uma mensagem serializada de um socket. Ele decodifica a mensagem e a desserializa de acordo com o tipo de serializador usado, retornando a mensagem correspondente.
